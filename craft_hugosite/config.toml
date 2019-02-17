@@ -1,0 +1,96 @@
+## Basic Configuration
+baseurl = "https://craft.nantipov.org"
+languageCode = "en"
+
+title = "Craft"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
+
+# summarylength = 30
+
+# paginate = 5
+pygmentsCodeFences = true
+pygmentsStyle = "tango"
+
+[author]
+	name = "Nikolai ANtipov"
+
+[Taxonomies]
+	tag = "tags"
+	series = "series"
+	series-desc = "series-desc"
+
+## Site Settings
+[params]
+    author = "Nikolai ANtipov"
+    title = "Craft"
+    description = "My situation with job opportunities"
+    authorimage = "/img/IMG_1145_1.JPG"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    copyright = "nantipov.org"
+    license = "CC BY-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = false
+    highlightjsstyle = "github"
+
+
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+    #toc = "hugo"
+
+    relatedPosts = true
+
+## Social Accounts
+[params.social]
+    github = "nantipov"
+    xing = "Nikolay_Antipov"
+    linkedin = "nantipov"
+    twitter = "nantipov_org"
+    stackoverflow = "633946"
+    #instagram = "<username>"
+    #facebook = "<username>"
+    #telegram = "<username>"
+    #email = "your-email@example.com"
+    # gravatar = "your-email@example.com"
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "CV as PDF"
+    weight = 200
+    identifier = "cv"
+    url = "/pdf/cv.pdf"
+[[menu.main]]
+    name = "Posts RSS"
+    weight = 300
+    identifier = "rss"
+    url = "/posts/index.xml"
+#[[menu.main]]
+#    name = "Portfolio"
+#    identifier = "portfolio"
+#    weight = 200
+#    url = "/portfolio/"
+# [[menu.main]]
+#     name = "About"
+#     identifier = "about"
+#     weight = 300
+#     url = "/about/"

@@ -1,0 +1,17 @@
+{{ define "header" }}
+  {{ partial "header.html" . }}
+{{ end }}
+
+{{ define "content" }}
+  {{ range where .Pages ".Params.featured" "==" true }}
+      {{ partial "page-single/content.html" . }}
+  {{ end }}
+{{ end }}
+
+{{ define "footer" }}
+  {{ if .Site.GoogleAnalytics }}
+    <!-- Google Analytics -->
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+  {{ partial "footer/font-awesome-js.html" . }}
+{{ end }}
