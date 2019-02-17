@@ -7,4 +7,4 @@ cd craft_hugosite
 rm -r ${PUBLIC_DIR}
 hugo
 
-cp -r ${PUBLIC_DIR}/ ${TARGET_DIR}/craft
+cp -r ${PUBLIC_DIR}/* ${TARGET_DIR}/craft
