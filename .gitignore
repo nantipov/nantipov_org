@@ -1,3 +1,5 @@
 .DS_Store
 craft_hugosite/public/
 craft_hugosite/resources/_gen
+root_hugosite/public/
+root_hugosite/resources/_gen

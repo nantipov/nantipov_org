@@ -5,8 +5,15 @@ PUBLIC_DIR=public
 git fetch
 git pull
 
-#build
-cd craft_hugosite
+#build and deploy - root
+cd root_hugosite
+rm -r ${PUBLIC_DIR}
+hugo
+
+#cp -r ${PUBLIC_DIR}/* ${TARGET_DIR}/root
+
+#build and deploy - craft
+cd ../craft_hugosite
 rm -r ${PUBLIC_DIR}
 hugo
 
