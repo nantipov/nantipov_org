@@ -11,14 +11,14 @@ canonifyurls = true
 paginate = 5
 
 [sitemap]
-    changefreq = "weekly"
-    priority = 0.5
+  changefreq = "weekly"
+  priority = 0.5
 
 [permalinks]
-    posts = "/:year/:month/:slug/"
-    post = "/:year/:month/:slug/"
-    pages = "/:slug/"
-    page = "/:slug/"
+  posts = "/:year/:month/:slug/"
+  post = "/:year/:month/:slug/"
+  pages = "/:slug/"
+  page = "/:slug/"
 
 [Author]
   name = "Nikolai Antipov"
