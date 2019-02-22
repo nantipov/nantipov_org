@@ -5,7 +5,7 @@ author: Nikolai Antipov
 date: 2019-02-18T14:07:13+01:00
 publishdate: 2019-02-18
 lastmod: 2019-02-18
-draft: true
+draft: false
 description: "Text about this post"
 tags: ["tech", "en", "hdd", "recover", "quick-format", "raspberry-pi",
        "raspbian"]
