@@ -10,7 +10,7 @@ cd root_hugosite
 rm -r ${PUBLIC_DIR}
 hugo
 
-#cp -r ${PUBLIC_DIR}/* ${TARGET_DIR}/root
+cp -r ${PUBLIC_DIR}/* ${TARGET_DIR}/root
 
 #build and deploy - craft
 cd ../craft_hugosite
