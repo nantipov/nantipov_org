@@ -7,7 +7,8 @@ publishdate: 2019-02-18
 lastmod: 2019-02-18
 draft: true
 description: "Text about this post"
-tags: ["tech", "en", "hdd", "recover", "quick-format"]
+tags: ["tech", "en", "hdd", "recover", "quick-format", "raspberry-pi",
+       "raspbian"]
 categories: ["tech", "en"]
 ---
 
@@ -21,11 +22,7 @@ So, what we have?
 * Correctly detected by `Windows` machine in 3 over 10 times;
 * There are lots of pictures, images, songs, videos very important for
 owner and his wife in particular;
-* Accidentally was formatted with quick-format
-(_I did not really know it at the very beginning_);
-* Initially had NTFS partition;
-* And now has, but empty one.
-
+* Should be NTFS partition.
 
 **Quick remark:** I am not a professional data recovery guru, so here is just
 my naive experience.
@@ -143,20 +140,159 @@ So, here is how I run it.
 ```sh
 cd /media/recovery_1/recovery_001/
 
-photorec /log /d /media/recovery_1/recovery_001/data /media/recovery_1/recovery_001/recovered_image.double_d
+photorec /log /d /media/recovery_1/data_files/data /media/recovery_1/recovery_001/recovered_image.double_d
 ```
 
 Where
 
 * `/log` - _Option_ to enable logging (for stop/resume abilities);
-* `/d /media/recovery_1/recovery_001/data` - _Option_ to specify target
+* `/d /media/recovery_1/data_files/data` - _Option_ to specify target
 directory for recovered files;
 * `/media/recovery_1/recovery_001/recovered_image.double_d` - points to `dd` compatible image under recovering.
 
 ## Organizing content
 
-*TODO:* Do pictures, music and video sorting (e.g. [beets.io](http://beets.io), [phockup](https://github.com/ivandokov/phockup), [elodie](https://github.com/jmathai/elodie), [exiftool](https://sno.phy.queensu.ca/~phil/exiftool/)).
+Well, the next thing we should do is making a tiny organization among nameless
+recovered files.
 
+Most of the media files have internal metadata section which might contain
+variety of data (e.g. date and time of shot, camera model, track name and
+artist, even global coordinates and other stuff).
+
+#### Music files with `music-file-organizer`
+
+Let's start with music files. I found just an amazing tool
+[music-file-organizer](https://git.zx2c4.com/music-file-organizer/about/)
+made by some very talented software engineer `Jason A. Donenfeld`
+(nickname `ZX2C4`).
+
+You should see it. It just a few lines of `C++` code. It works very stable and
+fast.
+
+So, let's build it (Debian / Ubuntu version).
+
+```sh
+git clone https://git.zx2c4.com/music-file-organizer
+cd music-file-organizer/
+sudo apt-get install libtag1-dev libicu-dev
+make
+sudo make install
+```
+
+And run.
+```sh
+export MUSICDIR=/media/recovery_1/music
+organizemusic /media/recovery_1/data_files/
+
+```
+
+Works perfect and so quick. Eventually you will find `mp3` and other sound
+files organized in the following way.
+```
+music/
+   |
+   +-- artist/
+         |
+         +-- album/
+               |
+               +--song1
+               |
+               +--song2
+```
+
+#### Photo and video files with `Media-Organizer`
+
+For organizing the photo and video files I found a tool
+[Media-Organizer](https://github.com/swami-mahesh/Media-Organizer).
+It provides required flexibility and simplicity either.
+
+Tool depends on (exiftool)[https://www.sno.phy.queensu.ca/~phil/exiftool/] and
+implemented as a library for `Java` programs.
+
+Quick installation of `exiftool` for Debian / Ubuntu.
+```sh
+sudo apt-get install exiftool
+```
+
+Quick installation of `exiftool` for Mac (`brew`).
+```sh
+brew install exiftool
+```
+
+Let's build and run it.
+
+Firstly, I cloned the `git`-repository.
+```sh
+git clone https://github.com/swami-mahesh/Media-Organizer
+```
+
+Since this a library, I need to build it and call with some code from
+my application. However, the simple command-line launcher is already there as
+one of provided examples.
+
+To make all stuff simple I added files from following `git`-repository
+(I was feeling lazy to install `maven` on machine, so, just copied the wrapper
+to let it do the work).
+```sh
+git clone https://github.com/takari/maven-wrapper
+```
+
+And now run with `maven exec` plugin.
+```sh
+./mvnw exec:java \
+       -Dexec.mainClass="com.github.swamim.media.examples.app.cli.MediaOrganizerTool" \
+       -Dexec.args="-exif /usr/bin/exiftool -from /media/recovery_1/data_files/ -imagesto /media/recovery_1/photos -videosto /media/recovery_1/videos -c MOVE"
+```
+
+Where
+
+* `com.github.swamim.media.examples.app.cli.MediaOrganizerTool` - is a `java`
+main class to run the application;
+* `-exif /usr/bin/exiftool` - points to the `exiftool` location;
+* `-from /media/recovery_1/data_files/` - files to analyze;
+* `-imagesto /media/recovery_1/photos` - location to put images;
+* `-videosto /media/recovery_1/videos` - location to put videos;
+* `-c MOVE` - working mode - **move** files from input folder (`-from`) into
+newly organized structure (`-imagesto` or `-videosto` locations).
+
+The following files structure will be created.
+```
+photos/
+videos/
+   |
+   +-- YYYY-MM-DD/
+            |
+            +--file1
+            |
+            +--file2
+```
+
+## So what?
+
+This is what we eventually get.
+```
+du -sch * .[!.]* | sort -rh
+
+663G	total
+466G	recovery_001
+173G	videos
+19G	 photos
+3.0G	data_files
+2.6G	music
+21K	System Volume Information
+512	$RECYCLE.BIN
+```
+
+This means we recovered `173Gi` of videos, `19Gi` of photos, `2.6Gi` of music
+and `3.0Gi` of other files (e.g. `.txt`, `.html`, etc.).
+Which is `197Gi` in total.
+
+So, even less than half of the disk volume (`500Gi`). But I am not sure if disk
+capacity was fully in use.
+
+Anyway, this was great experience for me. Accordingly to `EXIF` and metadata,
+recovered data is from 2006 and I am very glad we managed to get this
+stuff back.
 
 ## Funny backlog
 I did all my experiments running on `Raspberry Pi` device with `raspbian` OS
