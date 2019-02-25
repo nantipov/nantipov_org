@@ -8,6 +8,10 @@
         {{- partial "content.html" . -}}
     </div>
 
-    {{- partial "disqus.html" . -}}
+    {{ if ne .Params.showcomments false }}
+        {{ if .Site.DisqusShortname }}
+            {{- partial "disqus.html" . -}}
+        {{ end }}
+    {{ end }}
 
 {{ end }}
