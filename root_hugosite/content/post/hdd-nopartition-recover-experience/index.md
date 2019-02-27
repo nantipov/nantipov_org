@@ -6,9 +6,9 @@ date: 2019-02-18T14:07:13+01:00
 publishdate: 2019-02-18
 lastmod: 2019-02-18
 draft: false
-description: "Text about this post"
+description: "How I was recovering a hard disk"
 tags: ["tech", "en", "hdd", "recover", "quick-format", "raspberry-pi",
-       "raspbian"]
+       "raspbian", "testdisk", "photorec", "ddrescue", "organizemusic"]
 categories: ["tech", "en"]
 ---
 
