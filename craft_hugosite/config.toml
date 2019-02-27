@@ -23,6 +23,7 @@ pygmentsStyle = "tango"
 	tag = "tags"
 	series = "series"
 	series-desc = "series-desc"
+	categories = "categories"
 
 ## Site Settings
 [params]
@@ -80,8 +81,13 @@ pygmentsStyle = "tango"
     identifier = "cv"
     url = "/pdf/cv.pdf"
 [[menu.main]]
-    name = "Posts RSS"
+    name = "Personal blog"
     weight = 300
+    identifier = "personal_blog"
+    url = "https://nantipov.org"
+[[menu.main]]
+    name = "Posts RSS"
+    weight = 400
     identifier = "rss"
     url = "/posts/index.xml"
 #[[menu.main]]
