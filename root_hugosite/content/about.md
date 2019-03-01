@@ -11,4 +11,4 @@ Or even this might be somehow positive experience for somebody reading this.
 
 My name is Nikolai, 35 years old and I am software engineer. Here is my
 job-opportunities related
-web-site [craft.nantipov.org](https://craft.nantipov.org).
+web-site [https://craft.nantipov.org](https://craft.nantipov.org).
