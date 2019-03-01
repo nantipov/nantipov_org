@@ -5,7 +5,7 @@ author: Nikolai Antipov
 date: 2019-03-01T11:58:21+01:00
 publishdate: 2019-03-01
 lastmod: 2019-03-01
-draft: true
+draft: false
 description: "GSM 7bit PDU encoding algorithm in Java"
 tags: ["tech", "en", "java", "gsm", "pdu", "7bit", "converted", "sms", "ussd",
 "msisdn"]
