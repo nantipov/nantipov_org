@@ -206,7 +206,7 @@ For organizing the photo and video files I found a tool
 [Media-Organizer](https://github.com/swami-mahesh/Media-Organizer).
 It provides required flexibility and simplicity either.
 
-Tool depends on (exiftool)[https://www.sno.phy.queensu.ca/~phil/exiftool/] and
+Tool depends on [exiftool](https://www.sno.phy.queensu.ca/~phil/exiftool/) and
 implemented as a library for `Java` programs.
 
 Quick installation of `exiftool` for Debian / Ubuntu.
@@ -270,9 +270,11 @@ videos/
 ## So what?
 
 This is what we eventually get.
-```
+```sh
 du -sch * .[!.]* | sort -rh
+```
 
+```
 663G	total
 466G	recovery_001
 173G	videos
