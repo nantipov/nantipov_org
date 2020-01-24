@@ -8,7 +8,7 @@ lastmod: 2019-07-27
 draft: false
 description: "How I was fixing SAMSUNG LED UE49MU6179"
 tags: ["tech", "en", "tv", "led", "samsung", "ue49mu6179", "bn94-12439c"]
-categories: ["tech", "en"]
+categories: ["tech", "en", "fix"]
 ---
 
 ## What actually happened?
@@ -21,7 +21,7 @@ Hope to have fuse problem which could be simply fixable.
 
 ### Disassembly
 
-Start with two holes on the bottom for getting cover off and then pull the cover step by step, latch by latch.
+Start with two holes on the bottom for getting cover off and then pull it step by step, latch by latch.
 
 {{< fig class="grid two" figcaption="Disassembly holes" >}}
   {{< img src="IMG_1730.JPG" alt="Left Disassembly hole" >}}

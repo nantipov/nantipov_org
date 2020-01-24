@@ -9,7 +9,7 @@ draft: false
 description: "How I was recovering a hard disk"
 tags: ["tech", "en", "hdd", "recover", "quick-format", "raspberry-pi",
        "raspbian", "testdisk", "photorec", "ddrescue", "organizemusic"]
-categories: ["tech", "en"]
+categories: ["tech", "en", "fix"]
 ---
 
 ## What actually happened?
