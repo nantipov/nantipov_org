@@ -4,3 +4,39 @@ footer {
     background-color: #f9f9f9;
     border-top: 0.05rem solid #e5e5e5;
 }
+
+
+img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+fig {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+figcaption {
+	color: hsla(var(--text),.9);
+	font-size: 0.85em;
+	line-height: 1.25;
+	margin-top: 0.75em;
+	margin-bottom: 2.25em;
+}
+
+figure.grid {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+figure.grid img {
+	object-fit: cover;
+	height: auto;
+	margin-top: 0;
+	max-width: 50%;
+}
