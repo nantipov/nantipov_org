@@ -41,20 +41,20 @@ I have checked with multimeter and it turned out that fuse is not corrupted.
 
 ### Checking voltage output
 
-Next step was checking that output voltage conforms for declared values (it is a small table near to power connector).
-All output were fine which means the motherboard is most probably an issue.
+Next step was checking that output voltage conforms to the declared values (it is a small table near to power connector).
+All outputs were fine which means the motherboard most likely is an issue.
 
 ## How to solve a problem with motherboard?
 
 Well, that could be tricky.
-Luckily, there are lot motherboards available on the second market (e.g. eBay) for adequate price (~ 30 EUR).
-Therefore, I bought one and replaced.
+Luckily, there are lot of motherboards available on the second market (e.g. eBay) for adequate price (~ 30 EUR).
+Therefore, I bought one and replaced. (in my case )
 
 {{< fig figcaption="Motherboards old and 'new' one" >}}
   {{< img src="IMG_1756.JPG" alt="Mother and power-supply boards" >}}
 {{< /fig >}}
 
-**Please note**, motherboard type and TV's screen size should be carefully checked.
+**Please note**, motherboard type and TV's screen size should be carefully checked (in my case `bn94-12439c`, `ue49mu6179`, `49"`).
 
 {{< fig figcaption="Motherboard serial number" >}}
   {{< img src="IMG_1761.JPG" alt="Mother and power-supply boards" >}}
