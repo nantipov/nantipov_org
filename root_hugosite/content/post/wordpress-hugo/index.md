@@ -164,12 +164,7 @@ target:
 ### Build the thing and run it
 
 ```sh
-./gradlew clean build
-```
-
-And something like.
-```sh
-java -jar build/libs/wordhugopress-1.0.jar
+./gradlew clean build run
 ```
 
 ## Working web-site https://orangelvira.com
