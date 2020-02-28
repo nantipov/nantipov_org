@@ -5,6 +5,8 @@ PUBLIC_DIR=public
 git fetch
 git pull
 
+git submodule update --remote --merge
+
 #build and deploy - root
 cd root_hugosite
 rm -r ${PUBLIC_DIR}
