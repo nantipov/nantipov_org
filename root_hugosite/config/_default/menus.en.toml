@@ -1,0 +1,11 @@
+## Main Menu
+[[main]]
+    name = "About"
+    weight = 100
+    identifier = "about"
+    url = "about"
+[[main]]
+    name = "Craft (CV)"
+    weight = 300
+    identifier = "craft"
+    url = "https://craft.nantipov.org"
