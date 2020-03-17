@@ -6,7 +6,7 @@ date: 2019-12-14T12:34:57+01:00
 publishdate: 2019-12-14
 lastmod: 2019-12-14
 draft: false
-image: "wordhugopress_not_found_screenshot.png"
+image: "covers/wordhugopress_not_found_screenshot.png"
 description: "Converting WordPress into Hugo web-site"
 toc: true
 tags: ["tech", "en", "ru", "wordpress", "hugo", "java", "spring-batch", "converter", "freemarker", "jsoup"]

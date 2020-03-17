@@ -1,3 +1,6 @@
 [submodule "root_hugosite/themes/zzo"]
 	path = root_hugosite/themes/zzo
 	url = https://github.com/zzossig/hugo-theme-zzo.git
+[submodule "craft_hugosite/themes/hyde"]
+	path = craft_hugosite/themes/hyde
+	url = https://github.com/spf13/hyde.git

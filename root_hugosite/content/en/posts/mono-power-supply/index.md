@@ -9,9 +9,7 @@ draft: true
 description: "Text about this post"
 tags: ["tech", "tinker", "en", "mono", "robot", "rover", "power-supply", "lipo", "raspberrypi"]
 categories: ["tech", "tinker", "en"]
-series:
-- Mono
-##image: images/feature1/markdown.png
+series: [Mono]
 ---
 
 ## Post Header

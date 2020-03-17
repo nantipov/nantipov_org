@@ -5,11 +5,7 @@ lastmod: 2019-02-17T10:50:29+01:00
 tags : [ "hello", "de"]
 categories : [ "hello" ]
 layout: post
-type:  "posts"
-highlight: false
 draft: false
-weight: 2
-featured: true
 ---
 
 **Hallo an alle,**

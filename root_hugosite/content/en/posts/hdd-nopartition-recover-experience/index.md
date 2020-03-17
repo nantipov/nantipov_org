@@ -5,7 +5,7 @@ author: Nikolai Antipov
 date: 2019-02-18T14:07:13+01:00
 publishdate: 2019-02-18
 lastmod: 2019-02-18
-image: "img_1032_1.jpg"
+image: "covers/img_1032_1.jpg"
 draft: false
 description: "How I was recovering a hard disk"
 tags: ["tech", "en", "hdd", "recover", "quick-format", "raspberry-pi",
@@ -35,7 +35,7 @@ because of some partition issues.
 
 It turned out that `partition table` has been damaged and cannot be read.
 
-## Reading data image with `ddrescue`
+## Reading data image with 'ddrescue'
 
 I decided to carefully read disk image and store it as a single file in a
 safe place for further investigation.
@@ -101,7 +101,7 @@ still there. But we lost the entire structure of folders/directories and files.
 We are not aware about files location, size and fragmentation. It is data, but
 we cannot reach it.
 
-## Thank you `photorec`
+## Thank you 'photorec'
 I found a tool called [photorec](https://www.cgsecurity.org/wiki/PhotoRec).
 This one is amazing solution helping you for recovering data even after destroying
 the allocation table. It does not actually restores everything,
@@ -160,7 +160,7 @@ Most of the media files have internal metadata section which might contain
 variety of data (e.g. date and time of shot, camera model, track name and
 artist, even global coordinates and other stuff).
 
-#### Music files with `music-file-organizer`
+#### Music files with 'music-file-organizer'
 
 Let's start with music files. I found just an amazing tool
 [music-file-organizer](https://git.zx2c4.com/music-file-organizer/about/)
@@ -201,7 +201,7 @@ music/
                +--song2
 ```
 
-#### Photo and video files with `Media-Organizer`
+#### Photo and video files with 'Media-Organizer'
 
 For organizing the photo and video files I found a tool
 [Media-Organizer](https://github.com/swami-mahesh/Media-Organizer).
@@ -302,10 +302,10 @@ I did all my experiments running on `Raspberry Pi` device with `raspbian` OS
 on it.
 Here is how it actually looks like.
 
-#### Reading and storing disk image with `ddrescue`
+#### Reading and storing disk image with 'ddrescue'
 {{< img src="img_1032_1.jpg" caption="Connections" >}}
 
 {{< img src="img_1031_1.jpg" caption="In progress" >}}
 
-#### Extracting files with `photorec`
+#### Extracting files with 'photorec'
 {{< img src="img_1157_1.jpg" caption="Raspberry Pi with ice on top" >}}

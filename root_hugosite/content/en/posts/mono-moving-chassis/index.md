@@ -11,6 +11,7 @@ tags:
     - "tag 1"
 categories:
     - "c 1"
+series: [mono]
 ---
 
 ## Post Header

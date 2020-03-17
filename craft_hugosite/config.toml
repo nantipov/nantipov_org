@@ -3,7 +3,7 @@ baseurl = "https://craft.nantipov.org"
 languageCode = "en"
 
 title = "Craft"
-theme = "hyde-hyde"
+theme = "hyde"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
@@ -27,10 +27,11 @@ pygmentsStyle = "tango"
 
 ## Site Settings
 [params]
+    themeColor = "theme-base-0b"
     author = "Nikolai ANtipov"
     title = "Craft"
     description = "My situation with job opportunities"
-    authorimage = "/img/IMG_1145_1.JPG"
+
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license

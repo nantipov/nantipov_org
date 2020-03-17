@@ -5,7 +5,7 @@ author: Nikolai Antipov
 date: 2019-07-27T23:37:41+02:00
 publishdate: 2019-07-27
 lastmod: 2019-07-27
-image: "IMG_1699.JPG"
+image: "covers/IMG_1699.JPG"
 draft: false
 description: "How I was fixing SAMSUNG LED UE49MU6179"
 tags: ["tech", "en", "tv", "led", "samsung", "ue49mu6179", "bn94-12439c"]
