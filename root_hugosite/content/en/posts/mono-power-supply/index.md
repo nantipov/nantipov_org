@@ -6,7 +6,7 @@ date: 2020-02-01T13:05:13+01:00
 publishdate: 2020-02-12
 lastmod: 2020-02-12
 draft: false
-description: "Text about this post"
+description: "Assembling a simply power supply module for Mono"
 image: "covers/IMG_2520.JPG"
 tags: ["tech", "tinker", "en", "mono", "robot", "rover", "power-supply", "lipo", "raspberrypi"]
 categories: ["tech", "tinker", "en"]
