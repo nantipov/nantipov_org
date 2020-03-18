@@ -2,13 +2,13 @@
 title: "Mono :: First Steps"
 type: post
 author: Nikolai Antipov
-date: 2020-02-10T15:27:19+01:00
+date: 2020-01-26T15:27:19+01:00
 publishdate: 2020-02-24
 lastmod: 2020-02-24
 draft: false
 image: "covers/IMG_2508.JPG"
 description: "First steps with a small rover"
-tags: ["tech", "tinker", "en", "mono", "robot", "rover"]
+tags: ["tech", "tinker", "en", "mono", "robot", "rover", "raspberrypi"]
 categories: ["tech", "tinker", "en", "mono"]
 series: [mono]
 ---
@@ -21,7 +21,8 @@ It is a small rover which I am going to build using simple set of existing modul
 As a base the ready chassis has been taken.
 And here is the initial version for further experiments.
 
-{{< img src="IMG_2508.JPG" caption="Mono" >}}
+{{< img src="IMG_2508.JPG" caption="Mono view #1" >}}
+{{< img src="IMG_2509.JPG" caption="Mono view #2" >}}
 
 ## Components
 
