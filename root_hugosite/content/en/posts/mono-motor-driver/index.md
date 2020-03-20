@@ -5,7 +5,7 @@ author: Nikolai Antipov
 date: 2020-02-09T13:05:34+01:00
 publishdate: 2020-02-12
 lastmod: 2020-02-12
-draft: true
+draft: false
 description: "Putting Pololu TB6612FNG motor driver into consideration"
 image: "covers/IMG_2520.JPG"
 tags: ["tech", "tinker", "en", "mono", "robot", "rover", "tb6612fng", "motor-driver", "pca9685", "raspberrypi"]
