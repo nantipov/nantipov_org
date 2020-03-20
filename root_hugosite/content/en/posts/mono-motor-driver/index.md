@@ -7,7 +7,7 @@ publishdate: 2020-02-12
 lastmod: 2020-02-12
 draft: false
 description: "Putting Pololu TB6612FNG motor driver into consideration"
-image: "covers/IMG_2520.JPG"
+image: "covers/IMG_2571.JPG"
 tags: ["tech", "tinker", "en", "mono", "robot", "rover", "tb6612fng", "motor-driver", "pca9685", "raspberrypi"]
 categories: ["tech", "tinker", "en"]
 series: [Mono]
