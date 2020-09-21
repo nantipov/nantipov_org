@@ -8,7 +8,7 @@ lastmod: 2020-02-24
 draft: false
 image: "covers/IMG_2508.JPG"
 description: "First steps with a small rover"
-tags: ["tech", "tinker", "en", "mono", "robot", "rover", "raspberrypi", "pca9685", "l298n"]
+tags: ["tech", "tinker", "en", "mono", "robot", "rover", "raspberry-pi", "pca9685", "l298n"]
 categories: ["tech", "tinker", "en", "mono"]
 series: [mono]
 ---

@@ -8,7 +8,7 @@ lastmod: 2020-02-12
 draft: false
 description: "Assembling a simply power supply module for Mono"
 image: "covers/IMG_2520.JPG"
-tags: ["tech", "tinker", "en", "mono", "robot", "rover", "power-supply", "lipo", "raspberrypi"]
+tags: ["tech", "tinker", "en", "mono", "robot", "rover", "power-supply", "lipo", "raspberry-pi"]
 categories: ["tech", "tinker", "en"]
 series: [Mono]
 ---
