@@ -2,7 +2,7 @@
 title: "Hunter Secretary"
 date: 2020-09-21T11:52:50+02:00
 description: "Bot receptionist for responding on messages from recruiters"
-draft: true
+draft: false
 tags: ["en", "recruiting", "java", "hunter-secretary", "gmail", "google-auth", "markdown", "html", "templates"]
 categories: ["en", "recruiting", "tech"]
 image: covers/hunter-secretary-mailbox.png

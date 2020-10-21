@@ -2,7 +2,7 @@
 title: "Job looking situation"
 date: 2020-10-21T11:52:50+02:00
 description: "Job looking situation :: not looking for job at the moment"
-draft: true
+draft: false
 tags: ["en", "de", "ru", "recruiting"]
 categories: ["en", "de", "ru", "recruiting"]
 ---
