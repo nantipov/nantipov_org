@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nantipov-org-web
+  annotations:
+   cert-manager.io/issuer: letsencrypt-nginx
+spec:
+  ingressClassName: nginx 
+  tls:
+     - hosts:
+       - nantipov.org
+       secretName: letsencrypt-nginx-nantipov-org-web
+  rules:
+    - host: nantipov.org
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nantipov-org-web
+                port:
+                  name: http
+
+ 
